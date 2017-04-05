@@ -20,7 +20,7 @@ setup(
     long_description=readme,
     author='Onfido',
     url='https://github.com/onfido/s3-uploader/',
-    license=_license,
+    license='GPLv3',
     packages=find_packages(exclude=('tests', 'docs')),
     include_package_data=True,
     install_requires=requirements,
