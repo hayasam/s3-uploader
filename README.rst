@@ -2,6 +2,16 @@
 S3 Uploader
 ===============================
 
+.. image:: https://img.shields.io/pypi/d/s3-uploader.svg
+    :target: https://pypi.python.org/pypi/s3-uploader/
+    :alt: Downloads
+.. image:: https://img.shields.io/pypi/v/s3-uploader.svg
+    :target: https://pypi.python.org/pypi/s3-uploader/
+    :alt: Latest Version
+.. image:: https://img.shields.io/pypi/l/s3-uploader.svg
+    :target: https://pypi.python.org/pypi/s3-uploader/
+    :alt: License
+
 Command line tool for uploading resources to AWS S3.
 
 This is part of Onfido's team blobs store project.
