@@ -12,7 +12,6 @@ S3 Uploader
     :target: https://pypi.python.org/pypi/s3-uploader/
     :alt: License
 
-
 Command line tool for uploading resources to AWS S3.
 
 This is part of Onfido's team blobs store project.
