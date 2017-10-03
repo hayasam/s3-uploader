@@ -28,10 +28,5 @@ setup(
         'console_scripts': [
             's3-uploader = s3_uploader.main:main', ], },
     keywords=['python', 's3', 'aws', 'upload', 'binaries', 'resources',
-              'boto3', 'uploader'],
-    classifiers=(
-        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
-    ),
+              'boto3', 'uploader']
 )
