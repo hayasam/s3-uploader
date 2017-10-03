@@ -30,7 +30,6 @@ setup(
     keywords=['python', 's3', 'aws', 'upload', 'binaries', 'resources',
               'boto3', 'uploader'],
     classifiers=(
-        'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Programming Language :: Python',
