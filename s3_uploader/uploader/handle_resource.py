@@ -22,12 +22,19 @@ def handle_resource_upload(args):
     """
     try:
         validate_file(args.file)
-        version = upload_resource_and_return_version(
-            file_to_upload=args.file, bucket=args.bucket)
-        json_response = generate_json_output(args.file, args.location, version)
+        version, s3_path = upload_resource_and_return_version(
+            file_to_upload=args.file,
+            bucket=args.bucket,
+            bucket_path=args.s3_path)
+
+        json_response = generate_json_output(
+            args.file, args.location, version, s3_path)
+
         print_output_message(json_response)
         sys.exit()
+
     except ValidationException as ex:
         handle_exception(ex.message)
+
     except Exception:
         handle_exception('Unknown error occurred')

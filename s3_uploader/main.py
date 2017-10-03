@@ -27,6 +27,9 @@ def create_parser():
     parser.add_argument('-b', '--bucket', dest='bucket',
                         required=True, action='store',
                         help='The name of the bucket to use.')
+    parser.add_argument('-p', '--s3-path', dest='s3_path',
+                        action='store',
+                        help='Path to the file in S3')
     return parser
 
 

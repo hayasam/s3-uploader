@@ -37,6 +37,12 @@ Example for using the tool to upload a resource
 
 	s3-uploader -b my-s3-bucket -f my_big_blob -l path/to/blob/in/other/project
 
+Or you can upload to a specific location in S3
+
+.. code-block:: shell
+
+	s3-uploader -b my-s3-bucket -f my_big_blob -p path/to/file/in/s3 -l path/to/blob/in/other/project
+
 
 Get the project
 ===============
