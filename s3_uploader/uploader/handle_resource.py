@@ -28,7 +28,7 @@ def handle_resource_upload(args):
             bucket_path=args.s3_path)
 
         json_response = generate_json_output(
-            args.file, args.location, version, s3_path)
+            args.location, version, s3_path)
 
         print_output_message(json_response)
         sys.exit()
