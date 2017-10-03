@@ -15,7 +15,7 @@ requirements = [str(ir.req) for ir in install_requirements]
 
 setup(
     name='s3-uploader',
-    version='0.0.3',
+    version='0.0.4',
     description='Command line tool for uploading resources to S3',
     long_description=readme,
     author='Onfido',
