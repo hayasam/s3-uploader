@@ -32,4 +32,4 @@ def upload(file_path, bucket, bucket_path):
     try:
         s3_client.upload_file(file_path, bucket, bucket_path)
     except (ClientError, ValueError, S3UploadFailedError) as ex:
-        handle_exception(ex.message)
+        handle_exception(ex)

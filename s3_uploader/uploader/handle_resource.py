@@ -34,7 +34,7 @@ def handle_resource_upload(args):
         sys.exit()
 
     except ValidationException as ex:
-        handle_exception(ex.message)
+        handle_exception(ex)
 
     except Exception:
         handle_exception('Unknown error occurred')

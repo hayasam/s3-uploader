@@ -3,7 +3,7 @@ from __future__ import print_function
 
 import argparse
 
-from uploader.handle_resource import handle_resource_upload
+from s3_uploader.uploader.handle_resource import handle_resource_upload
 
 
 def create_parser():
