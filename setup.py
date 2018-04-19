@@ -2,7 +2,11 @@ from __future__ import print_function
 from __future__ import division
 
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
+
+try: # for pip >= 10
+    from pip._internal.req import parse_requirements
+except ImportError: # for pip <= 9.0.3
+    from pip.req import parse_requirements
 
 with open('README.rst') as f:
     readme = f.read()
@@ -15,7 +19,7 @@ requirements = [str(ir.req) for ir in install_requirements]
 
 setup(
     name='s3-uploader',
-    version='0.0.5',
+    version='0.0.6',
     description='Command line tool for uploading resources to S3',
     long_description=readme,
     author='Onfido',
